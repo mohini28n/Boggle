@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    
+    
+    <Button
+        android:id="@+id/two_player_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/single_player_button"
+        android:layout_centerVertical="true"
+        android:text="@string/two_player"
+        android:textColor="@android:color/white"
+        android:width="150dp"/>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/single_player_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/nameText"
+        android:text="Player Name"
+        android:gravity = "center"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/single_player_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/two_player_button"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_marginBottom="24dp"
+        android:onClick="single_player"
+        android:text="@string/single_player"
+        android:textColor="@android:color/white"
+        android:width="150dp" />
+
+</RelativeLayout>
